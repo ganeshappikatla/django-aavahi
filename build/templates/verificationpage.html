@@ -1,0 +1,121 @@
+{% load static %}
+
+{% static "images" as baseUrl %}
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'styles/verificationpage.css' %}">
+        <link rel="stylesheet" href="{% static 'js/verificationpage.js' %}">
+        <link rel="stylesheet" href="{% static 'styles/bootstrap.min.css' %}">
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/javascript.js' %}"></script>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="child-container1">
+                <img src="{% static 'images/logo.png' %}" width="192px" height="97px">
+                <p id="buildwithus">BUILD WITH US</p>
+            </div>
+            <div class="child-container2">
+                <a href="homepage" id="home">HOME</a>
+                <a href="#" id="about">ABOUT</a>
+            
+                <a href="" id="id-user"><i class="fa fa-user" aria-hidden="true" style="font-size:25px; color:black;"></i></a>
+            </div>
+        </div>
+<div class="main-container2">
+    
+        <p id="pid1">upload documents</p>
+        <div class="sub-container2">
+    
+    <div class="child2">
+        <form>
+            <select id="selectdocument" onchange="selectdocs()">
+                <option value="select ">Select any government Id</option>
+                <option value="aadharcard">Aadhar Card</option>
+                <option value="pancard">Pan Card</option>
+            </select>
+        </form>
+    
+    <div class="front">
+        <a href="#" id="frontpic"><span>--Front--</span></a>
+    </div>
+    <div class="back">
+        <a href="#" id="backpic"><span>--Back--</span></a>
+    </div>
+
+</div>
+
+
+<div class="vl"></div>
+
+
+<div class="child3">
+
+    <p id="selfieid">Upload a Selfie</p>
+
+    <div class="upload-selfie">
+        <i class="fa fa-user-circle-o" style="font-size:175px" id="usericonpic"></i><br>
+        <button type="button" id="uploadpicture">Upload<i class="fa fa-upload" style="font-size:14px" id="fileupload"></i></button>
+    </div><br>
+
+    <div class="row">
+        <div class="col-sm-5"></div>
+        <div class="col-sm-4">
+            <button id="submitselfie" data-toggle="modal" data-target="#mymodal" style="margin-left:-20px">Submit</button>
+
+        </div>
+        <div class="col-sm-3"></div>
+    </div>
+
+
+    <div class="modal" id="mymodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="row">
+                        <div class="col-sm-9"></div>
+                        <div class="col-sm-2">
+                            <i style="font-size:50px; color:lime;margin-left:50px"
+                            class="fa">&#xf058;</i>
+                        </div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>Thanks ! check for more in Profile for verification Status.br <br>And be ready
+                    you are almost done</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+
+
+</div>
+</div>
+</div>
+
+
+<footer class="footer">
+    <div class="footer-children">
+        <a href="">About us | </a>
+        <a href="">Terms & Conditions |</a>
+        <a href="">Privacy policy </a>
+    </div>
+    <div class="footer-statement">
+        <p>Copyrights.All rights reserved.</p>
+    </div>
+</footer>
+
+
+
+    </body>
+</html>

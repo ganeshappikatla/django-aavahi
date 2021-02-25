@@ -1,0 +1,100 @@
+{% load static %}
+
+{% static "images" as baseUrl %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'styles/portfoliopage.css' %}">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <div class="logo">
+                <img src="{% static 'styles/logo.png' %}" alt="smiley">
+                <p>BUILD WITH US</p>
+            </div>
+            <div class="main-header__child">
+                <div class="home">
+                    <a href="homepage">HOME</a>
+                </div>
+                <div class="aboutus">
+                    <a href="aboutus">ABOUT</a>
+                    
+                </div>
+                <div class="icon">
+                    <i class="fa fa-user"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="user-details">
+        <div class="details">
+            <h1>START BUILDING YOUR PORTFOLIO HERE</h1>
+            <div class="fields">
+                <div class="input-fields">
+                    <input type="text" placeholder="Your name">
+                    <input type="text" placeholder="Your Email">
+                    <select name="works" id="profession">
+                        <option value="" disabled selected>I'am a</option>
+                        <option value="Engineer">Engineer</option>
+                        <option value="Architect">Architect</option>
+                        <option value="Contractor">Contractor</option>
+                        <option value="designer">designer</option>
+                    </select>
+                    <input type="text" placeholder="Years of experience">
+                    <input type="text" placeholder="Enter your location">
+                    <input type="text" placeholder="Enter full Address">
+                    <input type="text" placeholder="Enter your number">
+                    <div class="main-verify">
+                        <button class="verify"><a href="verificationpage" style="text-decoration: none; color:black;">Verify & Generate pro ID</a><i class="fa fa-check-square-o" style="font-size:24px"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="input-buttons">
+                    <div class="border-left"></div>
+                    <h3>Your way in 4 simple steps!</h3>
+                    <div class="input-buttons__child">
+                        <div class="profile-parent">
+                            <i class='fas'>&#xf304;</i>
+                            <a href="create-profile.html">Create profile</a>
+                        </div>
+                        <div class="verification-parent">
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <a href="get-verified.html">Get verified</a>
+                        </div>
+                        <div class="portfolio-parent">
+                            <i class="fas fa-user-tie"></i>
+                            <a href="build-your-portfolio.html">Build your portfolio</a>
+                        </div>
+                        <div class="get-clients__parents">
+                            <i class="fas fa-users"></i>
+                            <a href="get-clients.html">Get clients/customers</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-children">
+            <a href="">About us | </a>
+            <a href="">Terms & Conditions |</a>
+            <a href="">Privacy policy </a>
+        </div>
+        <div class="footer-statement">
+            <p>Copyrights.All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

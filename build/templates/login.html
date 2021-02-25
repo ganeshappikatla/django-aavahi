@@ -1,0 +1,63 @@
+{% load static %}
+
+{% static "images" as baseUrl %}
+
+
+
+<html>
+<head>
+    <title>avahi login page</title>
+
+    <link rel="icon" href="Group 4.png">
+    <link rel="stylesheet" href="{% static 'styles/login.css' %}">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+</head>
+<body>
+
+<div class="a">
+    <img src="{% static 'images/avahi.png' %}" alt="this is avahi logo" width="300">
+    <p class="quote">BUILD WITH US</p>
+</div>
+
+<div class="b">
+    <div class="believe">
+        <h2>YOU BELIEVE.</h2>
+    </div>
+    <div class="login-form">
+        <form>
+            <i class="fas fa-user-alt"></i><br>
+            <input type="text" id="fullname" class="fullname" placeholder="Enter Your Name"><br>
+        <input type="text" id="username" class="username" placeholder="Enter Mobile Number"><br>
+        <input type="text" id="emailid" class="emailid" placeholder="Enter email id"><br>
+        <input type="text" id="enterotp" class="enterotp" placeholder="Enter OTP"><br>
+        <button class="otp">
+            Get OTP
+            <i class="fas fa-arrow-right"></i>
+        </button><br>
+        <button class="submit" ><a href="existinguserpage">Submit</a></button>
+        <p id="tagline">If you are new to site,<a href="" style="text-decoration: none;">Register here.</a></p>
+        </form>    
+    </div>
+    <div class="connect">
+        <h2>WE CONNECT!</h2>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-children">
+        <a href="">About us | </a>
+        <a href="">Terms & Conditions |</a>
+        <a href="">Privacy policy </a>
+    </div>
+    <div class="footer-statement">
+        <p>Copyrights.All rights reserved.</p>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,180 @@
+{% load static %}
+
+{% static "images" as baseUrl %}
+
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="{% static 'styles/existinguserpage.css' %}">
+        <link rel="stylesheet" href="{% static 'js/existinguserpage.js' %}">
+    <style>
+       
+    </style>
+    </head>
+    <body>
+        <div class="links">
+        <nav class="nav">
+            <ul>
+                <li>
+                    <a href="homepage.html">HOME</a>
+                </li>
+                <li>
+                    <a href="#">ABOUT US</a>
+                    
+                </li>
+                <li>
+                    <a href="portfoliopage" id="cpa" >CREATE PRO ACCOUNT</a>
+                </li>
+                <li>
+                    <button   id="myBtn" style='font-size:24px'><i class="fa fa-user" aria-hidden="true"></i></button>
+                    <div id="myModal" class="modal">
+
+ 
+                        <div class="modal-content">
+                          <p class="user">User</p>
+                          <a href="#">My Profile</a><br><br>
+                          <a href="#">My Wishlist</a><br><br>
+                          <a href="#">My Orders</a>
+                        </div>
+                      
+                      </div>
+                      
+                     
+                 </li>
+                <li>
+                    <a href="#">SUPPORT</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        <img src="{% static 'images/avahi.png' %}" class="logo">
+        <h5 class="bwu">BUILD WITH US</h5>
+        <div class="maincontent">
+            <h1 class="header">     YOU BELIEVE.WE CONNECT!           </h1> <br> 
+           
+            <div class="search">           
+                <form action="/action_page.php"></form> 
+                <select name="places" id="places">
+                    <option value="location">LOCATION</option>
+                    <option value="Hyderabad">Hyderabad</option>
+                    <option value="Warangal">Warangal</option>
+                    <option value="Khammam">Khammam</option>
+                  </select>
+                <span class="inputsearch">
+                <span class="fa fa-search"></span>         
+                <input class="input-fld" type="text"  placeholder= " Find Architects,Interior designers,Civil contractors & more...">  
+                <div class="input-content">                     
+                    <div class="inputcontent">  
+                        <ul>
+                            <li>
+                                <a href="landdealers"><img src="{% static 'images/landdealers.png' %}"><br><br><span>Land/property dealers.</span></a>
+                            </li>
+                            <li>
+                                <a href="Architects"><img src="{% static 'images/architect.png' %}"><br><br><span>Architects.</span></a>
+                            </li>
+                            <li>
+                                <a href="Interior designrs"><img src="{% static 'images/interiordesigner.png' %}"><br><br><span>Interior Designers.</span></a>
+                            </li>
+                            <li>
+                                <a href="civil en.png"><img src="{% static 'images/civilengineer.png' %}"><br><br><span>Civil Engineers.</span></a>
+                            </li>
+                            <li>
+                                <a href="contractor.png"><img src="{% static 'images/contractor.png' %}"><br><br><span>Contractors.</span></a>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+            <div>                
+                <!-- <input class="input-fld" type="text" placeholder= "Find Architects,Interior designers,Civil contractors & more..."> -->
+               <img src="{% static 'images/bgimage11.jpg' %}" class="background">
+                <h2 class="okf">OUR KEY FEATURES</h2>
+                <div class="keyfeatures">
+                    <ul>
+                    <li>
+                        <a><i class="fa fa-user customfont"></i><span>Portfolio management for consruction professionals.</span></a>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-pencil-square-o  customfont"></i><span>Project management for customers.</span></a>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-link customfont"></i><span>Connected trusted & Verified professionals.</span></a>
+                    </li>
+                    <li>
+                        <a><i class="fa fa-mobile customfont" aria-hidden="true"></i><span>E-tracking project report.</span></a>
+                    </li>
+                    </ul>
+                </div>
+                <h2>YOUR WAY IN <span class="yellowbackground"> 4 SIMPLE STEPS</span></h2>
+                <div class="accountDetails">                   
+                    <h4>CREATE PROFESSIONAL ACCOUNT</h4>
+                        <div class="accountfeatures">
+                            <ul>
+                            <li>
+                                <a><i class="fa fa-pen accountfont"></i><span class="alignbottom">Create profile</span></a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-check-circle  accountfont"></i><span class="alignbottom">Get verified</span></a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-user accountfont"></i><span class="alignbottom">Build your portfolio</span></a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-users accountfont"></i><span class="alignbottom">Get clients/customers</span></a>
+                            </li>
+                            </ul>
+                        </div>
+                        <a  href="portfoliopage"<button class="button" style="font-weight: bold;">CREATE NOW &nbsp;</button><i class="fa fa-plus-circle"></i></a>
+                
+                
+                </div>
+                <footer class="footer">
+                    <div class="footer-children">
+                        <a href="">About us | </a>
+                        <a href="">Terms & Conditions |</a>
+                        <a href="">Privacy policy </a>
+                    </div>
+                    <div class="footer-statement">
+                        <p>Copyrights.All rights reserved.</p>
+                    </div>
+                </footer>
+                    </div>
+         
+
+
+
+         <script>
+
+            var modal = document.getElementById("myModal");
+            
+            
+            var btn = document.getElementById("myBtn");
+            
+            
+             
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            
+            
+            
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+         </div>   
+    </body>
+</html> 
